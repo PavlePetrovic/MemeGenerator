@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@font-face {
+  font-family: Impact;
+  src: url("./fontsLocal/impact.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  padding: 40px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 60px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.18%, #672280), to(#A626D3));
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+}
+
+header .trolImg {
+  width: 31.31px;
+}
+
+header .logoText {
+  font-family: Karla, sans-serif;
+  font-size: 20.7482px;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  padding-left: 7px;
+  margin-right: auto;
+}
+
+header p {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.memeForm {
+  font-family: Karla, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.memeForm .inputDiv {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.memeForm .inputDiv input {
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  padding: 11px;
+  font-weight: 400;
+  width: 230px;
+}
+
+.memeForm .btnDiv {
+  max-width: 600px;
+  padding-top: 15px;
+}
+
+.memeForm .btnDiv button {
+  padding-block: 10px;
+  color: white;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  width: 489px;
+}
+
+.memeForm .btnDiv button:hover {
+  cursor: pointer;
+}
+
+.memeForm .meme {
+  margin-top: 40px;
+  position: relative;
+}
+
+.memeForm .meme .memePicture {
+  max-width: 500px;
+}
+
+.memeForm .meme .memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: Impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.memeForm .meme .bottom {
+  bottom: 0;
+}
+
+.memeForm .meme .top {
+  top: 0;
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .logoText {
+    margin-right: initial;
+  }
+  header p {
+    display: none;
+  }
+  .memeForm .inputDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .memeForm .btnDiv button {
+    width: 230px;
+  }
+  .meme .memePicture {
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

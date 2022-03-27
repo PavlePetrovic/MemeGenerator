@@ -1,0 +1,158 @@
+@import './_fonts.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    padding: 40px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+
+    .trolImg{
+        width: 31.31px;
+    }
+
+    .logoText{
+        font-family: Karla, sans-serif;
+        font-size: 20.7482px;
+        font-weight: 700;
+        letter-spacing: -0.1em;
+        padding-left: 7px;
+        margin-right: auto;
+    }
+
+    p{
+        font-family: Inter, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+.memeForm{
+    font-family: Karla, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .inputDiv{
+        max-width: 600px;
+        display: flex;
+        gap: 30px;
+
+        input{
+            border: 1px solid #D5D4D8;
+            border-radius: 5px;
+            padding: 11px;
+            font-weight: 400;
+            width: 230px;
+        }
+
+    }
+
+    .btnDiv{
+        max-width: 600px;
+        padding-top: 15px;
+
+        button{
+            padding-block: 10px;
+            color: white;
+            background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+            border-radius: 5px;
+            border: none;
+            width: 489px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .meme {
+        margin-top: 40px;
+        position: relative;
+
+        .memePicture{
+            max-width: 500px;
+        }
+
+        .memeText {
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 15px 0;
+            padding: 0 5px;
+            font-family: Impact, sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+            text-shadow:
+                2px 2px 0 #000,
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                0 2px 0 #000,
+                2px 0 0 #000,
+                0 -2px 0 #000,
+                -2px 0 0 #000,
+                2px 2px 5px #000;
+        }
+        
+
+        .bottom {
+            bottom: 0;
+        }
+        
+        .top {
+            top: 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+    header{
+        justify-content: center;
+
+        .logoText{
+            margin-right: initial;
+        }
+
+        p{
+            display: none;
+        }
+    }
+
+    .memeForm{
+        
+        .inputDiv{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btnDiv{
+            
+            button{
+                width: 230px;
+            }
+        }
+    }
+
+    .meme{
+
+        .memePicture{
+            width: 320px;
+        }
+    }
+}
